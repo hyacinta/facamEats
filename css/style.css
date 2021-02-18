@@ -1,29 +1,29 @@
-.header {
+.header .row {
   display: flex;
   align-items: center;
   padding: 8px 0;
 }
-.logo {
+.header .logo {
   background: url("../images/logo_symbol.png") no-repeat left center;
   background-size: 32px 24px;
   padding-left: 40px;
 }
-.logo span {
+.header .logo span {
   display: inline-block;
   position: relative;
 }
-.logo span::after {
+.header .logo span::after {
   content: "";
   display: inline-block;
   position: absolute;
   left: 0;
+  right: 0;
   bottom: 2px;
-  width: 100%;
   height: 2px;
   border-radius: 1px;
   background-color: #ffbe32;
 }
-.btn_toggle_snb {
+.header .btn_toggle_snb {
   width: 40px;
   height: 40px;
   border: none;
@@ -32,7 +32,6 @@
   color: #202020;
   background-color: transparent;
 }
-
 .search {
   position: relative;
   padding-top: 62%;
@@ -43,16 +42,14 @@
 .search > div {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-}
-.search .contents {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
 }
 .search .title {
   margin-bottom: 2.4rem;
@@ -77,7 +74,6 @@
   font-size: 1.6rem;
   color: #ff0014;
 }
-
 .search .hashTag li {
   display: inline-block;
 }
@@ -183,18 +179,18 @@
 }
 .footer ul {
   margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
 }
-.footer li {
+.footer li.tel,
+.footer li.mail {
   display: inline-block;
 }
-.footer li span {
+.footer li span,
+.footer p {
   font-weight: 700;
 }
 .footer .tel::after {
   content: "/";
   margin-left: 5px;
   margin-right: 3px;
-}
-.footer p {
-  font-weight: 700;
 }
