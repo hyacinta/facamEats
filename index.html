@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
   <script src="https://use.fontawesome.com/cfe2d0ff32.js"></script>
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -17,39 +18,118 @@
   <div class="container">
     <section class="row header">
       <div class="col-xs-10">
-        로고영역
+        <h1 class="logo subtitle2 font-nanum">패캠 <span>EATS</span></h1>
       </div>
       <div class="col-xs-2">
-        snb 영역
+        <button type="button" class="btn_toggle_snb pull-right">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <span class="a11y-hidden">사이드 메뉴</span>
+        </button>
       </div>
     </section>
     <section class="row search">
       <div class="col-xs-12 contents">
-        검색영역
+        <h2 class="h6 title">주위에 50개의 식당이 있어요</h2>
+        <div class="input-group searchInputGroup">
+          <label for="searchInput" class="a11y-hidden">식당 검색</label>
+          <input type="text" id="searchInput" class="form-control " placeholder="식당이름으로 검색해보세요">
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <span class="a11y-hidden">검색하기</span>
+            </button>
+          </span>
+        </div>
+        <ul class="hashTag body2">
+          <li><a href="#">#하우스</a></li>
+          <li><a href="#">#프로그래밍</a></li>
+          <li><a href="#">#교육</a></li>
+        </ul>
       </div>
+      
     </section>
     <section class="row map">
-      <div class="col-xs-8">title</div>
-      <div class="col-xs-4">버튼영역</div>
-      <div class="col-xs-12">
-        <div class="row">
-          <div class="col-xs-12">지도 영역</div>
+      <div class="col-xs-8">
+        <h2 class="subtitle1">가까운 음식점</h2>
+        <p class="body1">근처에 가까운 음식점이 있어요.</p>
+      </div>
+      <div class="col-xs-4">
+        <button type="button" class="pull-right btn btn-point btn-line btn-sm">
+          지도에서 보기
+        </button>
+      </div>
+      <div class="col-xs-12 mapArea">
+        <div class="pointer">음식점 위치</div>
+        <div class="userPointer">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <span class="a11y-hidden">내 위치</span>
         </div>
       </div>
     </section>
-    <section class="row restaurantList">
-      <div class="col-xs-6 col-xs-offset-6">정렬버튼</div>
+    <section class="row restaurant">
+      <div class="col-xs-7 col-xs-offset-5">
+        <button type="button" class="btn btn-link btn-ghost active">
+          <i class="fa fa-map" aria-hidden="true"></i>
+          <i class="fa fa-arrows-h" aria-hidden="true"></i>
+          <span>거리순</span>
+        </button>
+        <button type="button" class="btn btn-link btn-ghost">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          <span>인기순</span>
+        </button>
+      </div>
       <div class="col-xs-12">
-        <div class="row">
-          <div class="col-xs-6">test</div>
-          <div class="col-xs-6">test</div>
-          <div class="col-xs-6">test</div>
-          <div class="col-xs-6">test</div>
-        </div>
+        <h2 class="a11y-hidden">식당 리스트</h2>
+        <ul class="row restaurantList">
+          <li class="col-xs-6">
+            <a href="">
+              <div class="thumb">
+                <img src="/images/thumb.jpg" alt="">
+              </div>
+              <h3 class="name subtitle2">패캠식당</h3>
+              <p class="address body2">미왕빌딩 15층</p>
+            </a>
+          </li>
+          <li class="col-xs-6">
+            <a href="">
+              <div class="thumb">
+                <img src="/images/thumb.jpg" alt="">
+              </div>
+              <h3 class="name subtitle2">패캠식당</h3>
+              <p class="address body2">미왕빌딩 15층</p>
+            </a>
+          </li>
+          <li class="col-xs-6">
+            <a href="">
+              <div class="thumb">
+                <img src="/images/thumb.jpg" alt="">
+              </div>
+              <h3 class="name subtitle2">패캠식당</h3>
+              <p class="address body2">미왕빌딩 15층</p>
+            </a>
+          </li>
+          <li class="col-xs-6">
+            <a href="">
+              <div class="thumb">
+                <img src="/images/thumb.jpg" alt="">
+              </div>
+              <h3 class="name subtitle2">패캠식당</h3>
+              <p class="address body2">미왕빌딩 15층</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="row footer">
-      <div class="col-xs-12">푸터 영역</div>
+      <div class="col-xs-12">
+        <h2 class="font-nanum subtitle2 textSecondary">패캠 EATS</h2>
+        <ul class="caption">
+          <li>서울시 강남구 강남대로 364 미왕빌딩 15층</li>
+          <li class="tel"><span>Tel. </span>02-501-9399</li>
+          <li class="mail"><span>Mail. </span>help@fastcampus.co.kr</li>
+        </ul>
+        <p class="caption">copyright 패캠 EATS All Right Reserved</p>
+      </div>
     </section>
   </div>
 </body>

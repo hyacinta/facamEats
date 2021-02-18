@@ -116,7 +116,7 @@ p {
 }
 
 .font-nanum {
-  font-family: "NanumSquareRound", san-serif;
+  font-family: "NanumSquareRound", sans-serif;
   font-weight: 900;
 }
 
@@ -162,6 +162,9 @@ p,
   color: #202020;
   background-color: #fff;
 }
+.btn-ghost {
+  color: #707070;
+}
 
 .a11y-hidden {
   position: absolute;
@@ -176,4 +179,5 @@ p,
 ul,
 ol {
   padding-left: 0;
+  list-style: none;
 }
