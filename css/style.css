@@ -343,3 +343,41 @@
 .detail .map .mapArea {
   margin-top: 0;
 }
+
+.join .row > div {
+  margin: 52px 0;
+  padding: 0 32px;
+}
+.join .divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.2rem 0;
+  text-align: center;
+}
+.join .divider::after,
+.join .divider::before {
+  flex-grow: 1;
+  content: "";
+  height: 1px;
+  background-color: #bbbbbb;
+}
+.join .divider::after {
+  margin-left: 24px;
+}
+.join .divider::before {
+  margin-right: 24px;
+}
+
+.join .joinInputItem i {
+  width: 16px;
+}
+
+.join input::placeholder {
+  font-size: 1.4rem;
+  color: #b0b0b0;
+}
+
+.join .termsCheck {
+  margin-bottom: 2.4rem;
+}
