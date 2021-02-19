@@ -60,6 +60,72 @@
   margin-right: 3px;
 }
 
+.snb {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+}
+.snb > .row {
+  display: flex;
+}
+.snb > .row > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px;
+  background-color: #fff;
+}
+.snb .snbTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.snb .snbTitle .btn-closed {
+  color: #202020;
+  background-color: transparent;
+}
+.snb .btn-login {
+  margin: 1.6rem 0;
+}
+.snb .divider,
+.join .divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.2rem 0;
+  text-align: center;
+}
+.snb .divider::after,
+.snb .divider::before,
+.join .divider::after,
+.join .divider::before {
+  flex-grow: 1;
+  content: "";
+  height: 1px;
+  background-color: #bbbbbb;
+}
+.snb .divider::after,
+.join .divider::after {
+  margin-left: 24px;
+}
+.snb .divider::before,
+.join .divider::before {
+  margin-right: 24px;
+}
+.loginAfter {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  min-height: 690px;
+}
+
 .main .search {
   position: relative;
   padding-top: 62%;
@@ -348,36 +414,13 @@
   margin: 52px 0;
   padding: 0 32px;
 }
-.join .divider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3.2rem 0;
-  text-align: center;
-}
-.join .divider::after,
-.join .divider::before {
-  flex-grow: 1;
-  content: "";
-  height: 1px;
-  background-color: #bbbbbb;
-}
-.join .divider::after {
-  margin-left: 24px;
-}
-.join .divider::before {
-  margin-right: 24px;
-}
-
 .join .joinInputItem i {
   width: 16px;
 }
-
 .join input::placeholder {
   font-size: 1.4rem;
   color: #b0b0b0;
 }
-
 .join .termsCheck {
   margin-bottom: 2.4rem;
 }
