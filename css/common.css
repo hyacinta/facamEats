@@ -45,6 +45,12 @@ h3,
 h4,
 h5,
 h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
 p {
   margin: 0;
 }
@@ -129,7 +135,7 @@ p {
 .h6,
 .subTitle1,
 .subTitle2 {
-  color: #202020;
+  color: #202020 !important;
 }
 
 .textSecondary,
@@ -139,7 +145,7 @@ body,
 p,
 .caption,
 .overline {
-  color: #707070;
+  color: #707070 !important;
 }
 
 .textDisabled {

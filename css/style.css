@@ -1,3 +1,6 @@
+.header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
 .header .row {
   display: flex;
   align-items: center;
@@ -32,14 +35,39 @@
   color: #202020;
   background-color: transparent;
 }
-.search {
+
+.footer {
+  margin-top: 2.8rem;
+  padding: 2.4rem;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.footer ul {
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+.footer li.tel,
+.footer li.mail {
+  display: inline-block;
+}
+.footer li span,
+.footer p {
+  font-weight: 700;
+}
+.footer .tel::after {
+  content: "/";
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+.main .search {
   position: relative;
   padding-top: 62%;
   margin-bottom: 2.4rem;
   background-image: url("../images/search_bg.jpg");
   background-size: cover;
 }
-.search > div {
+.main .search > div {
   position: absolute;
   top: 0;
   display: flex;
@@ -51,39 +79,39 @@
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
 }
-.search .title {
+.main .search .title {
   margin-bottom: 2.4rem;
   color: #fff;
   text-align: center;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
-.search .input-group {
+.main .search .input-group {
   width: 100%;
   margin: 0 4rem 1.6rem;
   overflow: hidden;
 }
-.search .form-control {
+.main .search .form-control {
   border-color: #ff0014;
   border-right: none;
   border-radius: 20px 0 0 20px !important;
 }
-.search .input-group-btn .btn {
+.main .search .input-group-btn .btn {
   padding: 3px 12px 7px;
   border-radius: 0 20px 20px 0;
   border-color: #ff0014;
   font-size: 1.6rem;
   color: #ff0014;
 }
-.search .hashTag li {
+.main .search .hashTag li {
   display: inline-block;
 }
-.search .hashTag a {
+.main .search .hashTag a {
   margin: 8px 4px;
   padding: 8px 4px;
   color: #fff;
 }
 
-.map {
+.main .map {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -127,42 +155,42 @@
   background-color: #ffbe32;
 }
 
-.restaurant > div:first-child {
+.main .restaurant > div:first-child {
   display: flex;
   justify-content: flex-end;
 }
-.restaurant .btn-ghost {
+.main .restaurant .btn-ghost {
   position: relative;
   display: inline-block;
   padding-right: 4px;
 }
-.restaurant .btn-ghost > i {
+.main .restaurant .btn-ghost > i {
   font-size: 1.6rem;
   color: #bbb;
 }
-.restaurant .btn-ghost.active > i {
+.main .restaurant .btn-ghost.active > i {
   color: #ff0014;
 }
-.restaurant .btn-ghost > i.fa-arrows-h {
+.main .restaurant .btn-ghost > i.fa-arrows-h {
   position: absolute;
   top: 11px;
   left: 14px;
   font-size: 1.2rem;
   color: #fff;
 }
-.restaurant .restaurantList {
+.main .restaurant .restaurantList {
   margin-top: 0.8rem;
 }
-.restaurant .restaurantList li {
+.main .restaurant .restaurantList li {
   margin-bottom: 1.6rem;
 }
-.restaurant .thumb {
+.main .restaurant .thumb {
   position: relative;
   margin-bottom: 8px;
   padding-top: 64%;
   overflow: hidden;
 }
-.restaurant .thumb img {
+.main .restaurant .thumb img {
   position: absolute;
   top: 0;
   left: 0;
@@ -171,26 +199,147 @@
   max-width: 100%;
 }
 
-.footer {
-  margin-top: 2.8rem;
-  padding: 2.4rem;
+.detail .imgSlider {
+  position: relative;
+  margin-bottom: 2.4rem;
+  padding-top: 53%;
+  background-image: url("../images/thumb.jpg");
+  background-size: cover;
+  overflow: hidden;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+.detail .imgSlider > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.detail .imgSlider .btn-prev,
+.detail .imgSlider .btn-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -26px;
+  padding: 0;
+  font-size: 5.2rem;
+  line-height: 1;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  z-index: 9999;
+}
+.detail .imgSlider .btn-prev i,
+.detail .imgSlider .btn-next i {
+  vertical-align: top;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+.detail .imgSlider .btn-prev {
+  left: 16px;
+}
+.detail .imgSlider .btn-next {
+  right: 16px;
+}
+.detail .imgSlider .indicator {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
   text-align: center;
-  background-color: #f6f6f6;
 }
-.footer ul {
-  margin-top: 1.6rem;
-  margin-bottom: 0.8rem;
-}
-.footer li.tel,
-.footer li.mail {
+.detail .imgSlider .indicator li {
   display: inline-block;
+  margin: 0 4px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
-.footer li span,
-.footer p {
+.detail .imgSlider .indicator a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding-top: 12px;
+  background-color: #dedede;
+}
+.detail .imgSlider .indicator .active a {
+  background-color: #ff0014;
+}
+
+.detail .restaurantInfo .name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail .restaurantInfo .btn-share {
+  font-size: 2rem;
+  color: #b0b0b0;
+}
+.detail .restaurantInfo .info1 li {
+  display: inline-flex;
+  align-items: flex-end;
+}
+.detail .restaurantInfo .info1 li::after {
+  display: inline-block;
+  content: "|";
+  margin: 0 0.8rem;
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+.detail .restaurantInfo .info1 li:last-child:after {
+  display: none;
+}
+.detail .restaurantInfo .info1 .btn-like {
+  padding-left: 0;
+}
+.detail .restaurantInfo .info1 .btn-like i {
+  color: #ff0014;
+}
+.detail .menuBoard .menuBox {
+  margin-bottom: 2.4rem;
+  padding: 2.8rem 2rem 0.8rem;
+  border: 2px solid #eeeeee;
+}
+.detail .menuBoard .menuBox .title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.6rem;
+}
+.detail .menuBoard .menuBox .title::before,
+.detail .menuBoard .menuBox .title::after {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 2px;
+  margin: 0 12px;
+  background-color: #ffbe32;
+  border-radius: 1px;
+}
+.detail .menuBoard .menuList li {
+  margin-bottom: 2.4rem;
+}
+.detail .menuBoard .menuList a {
+  display: inline-block;
+  padding: 0 1.6rem 0.4rem;
+  padding-left: 1.6rem;
+  border-left: 2px solid #ff7a85;
+  border-radius: 1px;
+}
+
+.detail .restaurantInfo2 i:nth-child(1) {
+  margin-right: 4px;
+  color: #ffbe32;
+}
+.detail .restaurantInfo2 span:nth-child(2) {
+  display: inline-block;
+  width: 60px;
+  margin-right: 0.8rem;
+  margin-bottom: 1.6rem;
   font-weight: 700;
 }
-.footer .tel::after {
-  content: "/";
-  margin-left: 5px;
-  margin-right: 3px;
+.detail .map .mapArea {
+  margin-top: 0;
 }
