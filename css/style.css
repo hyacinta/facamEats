@@ -388,6 +388,9 @@
   color: #707070;
 }
 .detail .restaurant-info .info1 .btn-like i {
+  color: #b0b0b0;
+}
+.detail .restaurant-info .info1 .btn-like.active i {
   color: #ff0014;
 }
 .detail .menu-board .menu-box {
