@@ -86,7 +86,7 @@ p {
 }
 
 .h6,
-.subTitle1 {
+.sub-title1 {
   font-weight: 500;
 }
 
@@ -95,12 +95,12 @@ p {
   line-height: 3.6rem;
 }
 
-.subTitle1 {
+.sub-title1 {
   font-size: 2rem;
   line-height: 2.8rem;
 }
 
-.subTitle2 {
+.sub-title2 {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 700;
@@ -126,29 +126,29 @@ p {
   font-weight: 900;
 }
 
-.textPrimary,
+.text-primary,
 .h1,
 .h2,
 .h3,
 .h4,
 .h5,
 .h6,
-.subTitle1,
-.subTitle2 {
-  color: #202020 !important;
+.sub-title1,
+.sub-title2 {
+  color: #202020;
 }
 
-.textSecondary,
+.text-secondary,
 body,
 .body1,
 .body2,
 p,
 .caption,
 .overline {
-  color: #707070 !important;
+  color: #707070;
 }
 
-.textDisabled {
+.text-disabled {
   color: #b0b0b0;
 }
 
