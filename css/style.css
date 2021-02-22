@@ -70,25 +70,29 @@
   backdrop-filter: blur(8px);
   z-index: 9999;
 }
-.snb > .row {
-  display: flex;
+.snb > div {
+  height: 100%;
 }
-.snb > .row > div {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  padding: 24px;
+.snb .snbBg {
+  height: 100%;
   background-color: #fff;
 }
-.snb .snbTitle {
+.snb .snbBg .snbTitle {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 4rem;
+  width: 100%;
+  height: 28px;
+  margin-top: 24px;
+  margin-bottom: 40px;
 }
 .snb .snbTitle .btn-closed {
   color: #202020;
   background-color: transparent;
+}
+.snb .snbBg .contentsArea {
+  width: 100%;
+  height: calc(100% - 116px);
 }
 .snb .btn-login {
   margin: 1.6rem 0;
@@ -118,12 +122,22 @@
 .join .divider::before {
   margin-right: 24px;
 }
-.loginAfter {
+.snb .loginAfter {
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  min-height: 690px;
+}
+.snb .loginAfter .loginMenu li {
+  margin-bottom: 2.4rem;
+}
+.snb .loginAfter .loginMenu i {
+  width: 24px;
+  color: #ff0014;
+  text-align: center;
+}
+.snb .loginAfter .loginMenu a {
+  color: #202020;
 }
 
 .main .search {
