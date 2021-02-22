@@ -250,25 +250,27 @@
   display: flex;
   justify-content: flex-end;
 }
-.main .restaurant .btn-ghost {
+.main .restaurant .btn-sort {
   position: relative;
   display: inline-block;
   padding-right: 4px;
+  color: #707070;
 }
-.main .restaurant .btn-ghost > i {
+.main .restaurant .btn-sort > i {
   font-size: 1.6rem;
   color: #bbb;
 }
-.main .restaurant .btn-ghost.active > i {
+.main .restaurant .btn-sort.active > i {
   color: #ff0014;
 }
-.main .restaurant .btn-ghost > i.fa-arrows-h {
+.main .restaurant .btn-sort > i.fa-arrows-h {
   position: absolute;
   top: 11px;
   left: 14px;
   font-size: 1.2rem;
   color: #fff;
 }
+
 .main .restaurant .restaurant-list {
   margin-top: 0.8rem;
 }
@@ -383,6 +385,7 @@
 }
 .detail .restaurant-info .info1 .btn-like {
   padding-left: 0;
+  color: #707070;
 }
 .detail .restaurant-info .info1 .btn-like i {
   color: #ff0014;

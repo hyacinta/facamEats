@@ -164,6 +164,10 @@ p,
 .btn-fill {
   color: #fff;
 }
+.btn-fill:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 .btn-line {
   color: #202020;
   background-color: #fff;
