@@ -33,7 +33,7 @@
     </header>
 
     <!-- main -->
-    <main class="container main">
+    <main class="container main" hidden>
       <section class="row search">
         <div class="col-xs-12">
           <h2 class="h6 title">주위에 50개의 식당이 있어요</h2>
@@ -129,7 +129,7 @@
     </main>
     
     <!-- restaurant detail -->
-    <main class="container detail" hidden>
+    <main class="container detail">
       <section class="row img-slider">
         <div class="col-xs-12">
           <h2 class="a11y-hidden">이미지 슬라이더</h2>
@@ -174,7 +174,7 @@
           <div class="menu-box">
             <h2 class="sub-title1 font-nanum title">대표 메뉴</h2>
             <ul class="menu-list">
-              <li><a href="">
+              <li class="select"><a href="">
                 <h3 class="sub-title2">이탈리안 비엠티 (15cm 세트)</h3>
                 <p class="body2">8,100원</p>
               </a></li>
@@ -289,8 +289,9 @@
       </div>
     </footer>
 
+    
     <!-- snb -->
-    <div class="container snb logout">
+    <div class="container snb logout" hidden>
       <div class="row">
         <div class="col-xs-9 col-xs-offset-3 snb-bg">
           <div class="snb-title">
@@ -320,6 +321,21 @@
             <button type="button" class="btn btn-default btn-block btn-lg">로그아웃</button>
           </div>
 
+        </div>
+      </div>
+    </div>
+
+    <!-- cart -->
+    <a href="http://" class="btn-cart">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      <i class="cart-item-counter">1</i>
+    </a>
+
+    <!-- delivery check -->
+    <div class="container delivery-check">
+      <div class="row">
+        <div class="col-xs-12 sub-title1">
+          맛있는 버거세트가 이동중입니다.
         </div>
       </div>
     </div>
